@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background:#20B2AA">
+<div th:insert="HEADER"></div>
+<form th:action="${'/employee/add'}" method="post">
+  <input type="text" name="surname" placeholder="Фамилия сотрудника">
+    <input type="date" name="dr" maxlength="8">
+    <input type="checkbox" name="gender">
+  <input type="number" name="salary" placeholder="Зарплата сотрудника">
+  <input type="number" name="children" placeholder="Количество детей">
+  <br>
+  <button style="background: #FFC0CB; margin-bottom: 20px" type="submit" class="btn btn-del">Добавить сотрудника</button>
+</form>
+</body>
+</html>
